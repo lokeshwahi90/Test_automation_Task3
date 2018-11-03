@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="TestCase003(failed)" parallel="tests">
+    <classes>
+      <class name="Trivago_Mars.TestCase003">
+        <methods>
+          <include name="Navigate"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Trivago_Mars.TestCase003 -->
+    </classes>
+  </test> <!-- TestCase003(failed) -->
+</suite> <!-- Failed suite [Suite] -->

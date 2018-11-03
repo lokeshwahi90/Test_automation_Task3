@@ -1,0 +1,39 @@
+package Trivago_Mars;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+public class TestCase002_SubscribeNewsletter {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		// Create a new instance of the ChromeDriver driver
+		WebDriver driver = new SafariDriver();
+
+        //Launch the Online Store WebsitePage
+	
+        driver.get("http://room5.trivago.com/");
+        
+      //Wait for 5 Seconds
+		Thread.sleep(5000);
+        //JavaScriptExecutor is an Interface that helps to execute JavaScript through Selenium Webdriver. //https://www.guru99.com/execute-javascript-selenium-webdriver.html
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,250)", "");
+		
+		WebElement contactTag = driver.findElement(By.linkText("Contact"));
+		contactTag.click();
+	}
+
+}

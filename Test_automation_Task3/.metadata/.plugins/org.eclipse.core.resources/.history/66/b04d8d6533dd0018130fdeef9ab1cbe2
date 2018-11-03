@@ -1,0 +1,42 @@
+package Trivago_Mars;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.safari.SafariDriver;
+
+public class FirstTestCase {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		// Create a new instance of the ChromeDriver driver
+				WebDriver driver = new SafariDriver();
+				
+		        //Launch the Online Store WebsitePage
+				
+				
+                String tagname = " ";
+                driver.get("http://room5.trivago.com/");
+                tagname=driver.findElement(By.id("search")).getTagName();
+                System.out.println(tagname);
+                WebElement search = driver.findElement(By.className("search-icon"));
+                search.click();
+                search.sendKeys("Europe");
+                search.sendKeys(Keys.RETURN);
+                
+                
+		 
+		        // Print a Log In message to the screen
+		        System.out.println("Successfully opened the website www.Store.Demoqa.com");
+		 
+				//Wait for 5 Seconds
+				Thread.sleep(5000);
+				
+		        // Close the driver
+		        driver.quit();
+
+	}
+
+}

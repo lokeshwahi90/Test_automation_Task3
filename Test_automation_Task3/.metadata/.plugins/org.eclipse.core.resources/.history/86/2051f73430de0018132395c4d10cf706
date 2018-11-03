@@ -1,0 +1,95 @@
+package Trivago_Mars;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+
+public class TestCase001_ContactForm {
+	@Test
+	public void TestCase001_ContactForm() throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		// Create a new instance of the ChromeDriver driver
+				WebDriver driver = new SafariDriver();
+
+		        //Launch the Online Store WebsitePage
+			
+                driver.get("http://room5.trivago.com/");
+                
+              //Wait for 5 Seconds
+				Thread.sleep(5000);
+				
+				JavascriptExecutor jse = (JavascriptExecutor) driver;
+				jse.executeScript("window.scrollBy(0,250)", "");
+				
+				WebElement contactTag = driver.findElement(By.linkText("Contact"));
+				contactTag.click();
+				
+				Thread.sleep(5000);
+				System.out.println("It is working thill the new contact page");
+				
+				driver.get("http://magazine.trivago.com/contact/");
+				
+				ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+
+				driver.switchTo().window(tabs.get(1));
+		
+				
+				Thread.sleep(5000);
+				
+				WebElement textarea = driver.findElement(By.className("contact-msg"));
+				
+				textarea.sendKeys("hallo, test message from Selenium");	
+				
+				
+				jse.executeScript("window.scrollBy(0,250)", "");  
+				
+				
+				WebElement inputName = driver.findElement(By.className("contact-input")); 
+				inputName.sendKeys("Lokesh");	
+				
+				WebElement inputEmail = driver.findElement(By.id("contact-email")); 
+				inputEmail.sendKeys("lokesh@test.com");		
+				
+				WebElement inputCheck = driver.findElement(By.id("confirm")); 
+				if (!inputCheck.isSelected())
+                {                    
+					inputCheck.click();
+                }	
+				
+				System.out.println("Contact form is filled");	
+		            
+				WebElement submitButton = driver.findElement(By.className("contact-submit")); 
+				submitButton.click();
+				
+				Thread.sleep(5000);
+				
+				WebElement msgElement = driver.findElement(By.className("feedback1"));
+			
+				
+			
+				if(msgElement.isDisplayed()){
+					org.testng.Assert.assertTrue(true);
+				System.out.println("Contact form was submitteds");
+				} else {
+					org.testng.Assert.assertTrue(false);
+					System.out.println("Contact form was not submitteds");
+				}
+				
+             driver.close();
+      
+	
+	}
+	
+
+}

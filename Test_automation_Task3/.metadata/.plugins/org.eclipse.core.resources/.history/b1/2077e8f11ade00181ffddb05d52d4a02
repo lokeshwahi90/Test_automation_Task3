@@ -1,0 +1,36 @@
+package Trivago_Mars;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class TestCase003_Navigate {
+	
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		// Create a new instance of the ChromeDriver driver
+		WebDriver driver = new SafariDriver();
+
+        //Launch the Online Store WebsitePage
+	
+        driver.get("http://room5.trivago.com/");
+        driver.manage().window().maximize();
+        
+      //Wait for 5 Seconds
+      		Thread.sleep(5000);
+      		
+      		WebElement navigation_menu = driver.findElement(By.className("nav-icon")); 
+      		navigation_menu.click();
+      		
+      		WebElement destination = driver.findElement(By.xpath("//*[@id='menu']/div/div/div[1]/div[2]/div/div[1]/div[2]/a/div/div[1]"));
+      		
+      		
+        
+	}
+	
+}

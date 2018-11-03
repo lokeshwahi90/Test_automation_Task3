@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">TestCase003</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">25,543</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestCase001_ContactForm</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">41,196</td><td></td><td></td></tr>
+<tr><td><a href="#t2">TestCase002_SubscribeNewsletter</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">44,131</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num attn">1</th><th class="num">110,870</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestCase003 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Trivago_Mars.TestCase003</td><td><a href="#m0">closeBrowser</a></td><td rowspan="1">1541239297929</td><td rowspan="1">0</td></tr><tr><th colspan="4">TestCase003 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Trivago_Mars.TestCase003</td><td><a href="#m1">Navigate</a></td><td rowspan="1">1541239297384</td><td rowspan="1">537</td></tr><tr><th colspan="4">TestCase003 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Trivago_Mars.TestCase003</td><td><a href="#m2">Search</a></td><td rowspan="1">1541239272424</td><td rowspan="1">24955</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestCase001_ContactForm &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Trivago_Mars.TestCase001</td><td><a href="#m3">closeBrowser</a></td><td rowspan="1">1541239313585</td><td rowspan="1">0</td></tr><tr><th colspan="4">TestCase001_ContactForm &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Trivago_Mars.TestCase001</td><td><a href="#m4">TestCase001_ContactForm</a></td><td rowspan="1">1541239272424</td><td rowspan="1">41159</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">TestCase002_SubscribeNewsletter &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Trivago_Mars.TestCase002</td><td><a href="#m5">closeBrowser</a></td><td rowspan="1">1541239316519</td><td rowspan="1">0</td></tr><tr><th colspan="4">TestCase002_SubscribeNewsletter &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Trivago_Mars.TestCase002</td><td><a href="#m6">TestCase002_SubscribeNewsletter</a></td><td rowspan="1">1541239272424</td><td rowspan="1">44094</td></tr></tbody>
+</table>
+<h2>TestCase003</h2><h3 id="m0">Trivago_Mars.TestCase003#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @AfterTest annotated closeBrowser.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Trivago_Mars.TestCase003#Navigate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not create a session: The Safari instance is already paired with another WebDriver session.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
+System info: host: &apos;Lokeshs-Air.fritz.box&apos;, ip: &apos;fe80:0:0:0:1454:6821:8516:28d8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: SafariDriver
+remote stacktrace: 
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:78)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:60)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:38)
+	at Trivago_Mars.TestCase003.Navigate(TestCase003.java:26)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Trivago_Mars.TestCase003#Search</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestCase001_ContactForm</h2><h3 id="m3">Trivago_Mars.TestCase001#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @AfterTest annotated closeBrowser.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Trivago_Mars.TestCase001#TestCase001_ContactForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestCase002_SubscribeNewsletter</h2><h3 id="m5">Trivago_Mars.TestCase002#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @AfterTest annotated closeBrowser.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Trivago_Mars.TestCase002#TestCase002_SubscribeNewsletter</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

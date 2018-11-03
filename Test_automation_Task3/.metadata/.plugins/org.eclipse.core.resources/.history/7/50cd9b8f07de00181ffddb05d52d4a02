@@ -1,0 +1,10 @@
+package Trivago_Mars;
+
+public class TestCase002_SubscribeNewsletter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
